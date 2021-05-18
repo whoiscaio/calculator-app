@@ -20,4 +20,60 @@ body {
   align-items: center;
 }
 
+main.calc header .theme-selector {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+main.calc header .theme-selector h1 {
+  font-size: 3rem;
+}
+main.calc header .theme-selector .themes {
+  display: flex;
+  align-items: flex-end;
+}
+main.calc header .theme-selector .themes > span {
+  transform: translateY(-18%);
+  margin-right: 1.6rem;
+}
+main.calc header .theme-selector .themes .changer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "number-one number-two number-three" "slider slider slider";
+}
+main.calc header .theme-selector .themes .changer span {
+  padding: 0.4rem 0.8rem;
+}
+main.calc header .theme-selector .themes .changer span:nth-child(1) {
+  grid-area: number-one;
+}
+main.calc header .theme-selector .themes .changer span:nth-child(2) {
+  grid-area: number-two;
+}
+main.calc header .theme-selector .themes .changer span:nth-child(3) {
+  grid-area: number-three;
+}
+main.calc header .theme-selector .themes .changer > div {
+  grid-area: slider;
+  background-color: #0003;
+  border-radius: 1rem;
+  position: relative;
+  display: flex;
+}
+main.calc header .theme-selector .themes .changer > div .pointer {
+  width: 20%;
+  height: 60%;
+  position: absolute;
+  top: 50%;
+  transform: translate(35%, -50%);
+  left: 0%;
+  background-color: red;
+  border-radius: 6rem;
+}
+main.calc header .theme-selector .themes .changer > div .option {
+  width: calc(100%/3);
+  height: 100%;
+}
+
 /*# sourceMappingURL=main.css.map */
