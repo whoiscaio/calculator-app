@@ -43,8 +43,6 @@ main.calc header{
 
         > div {
           grid-area: slider;
-
-          background-color: #0003;
           border-radius: 1rem;
 
           position: relative;
@@ -52,15 +50,14 @@ main.calc header{
           display: flex;
 
           .pointer {
-            width: 20%;
+            width: 18%;
             height: 60%;
 
             position: absolute;
             top: 50%;
-            transform: translate(35%, -50%);
+            transform: translate(40%, -50%);
             left: 0%;
-
-            background-color: red;
+            
             border-radius: 6rem;
           }
 

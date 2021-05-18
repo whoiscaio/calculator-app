@@ -38,6 +38,144 @@ body main.calc {
   margin: 0 2rem;
 }
 
+body.theme-one {
+  background: #3a4764;
+}
+body.theme-one main.calc header {
+  color: #ffffff;
+}
+body.theme-one main.calc header .display {
+  background: #182034;
+}
+body.theme-one main.calc header .changer > div {
+  background-color: #232c43;
+}
+body.theme-one main.calc header .changer > div .pointer {
+  background: #d03f2f;
+}
+body.theme-one main.calc .keypad {
+  background: #232c43;
+}
+body.theme-one main.calc .keypad .alphanumeric {
+  background-color: #eae3dc;
+  box-shadow: 0px 4px 0px 0px #b4a597;
+  color: #444b5a;
+}
+body.theme-one main.calc .keypad .alphanumeric:active {
+  background-color: #b4a597;
+  transition: background-color 0.1s;
+}
+body.theme-one main.calc .keypad .operation {
+  background-color: #637097;
+  box-shadow: 0px 4px 0px 0px #404e72;
+  color: #ffffff;
+}
+body.theme-one main.calc .keypad .operation:active {
+  background-color: #404e72;
+  transition: background-color 0.1s;
+}
+body.theme-one main.calc .keypad .result {
+  background-color: #d03f2f;
+  box-shadow: 0px 4px 0px 0px #93261a;
+  color: #ffffff;
+}
+body.theme-one main.calc .keypad .result:active {
+  background-color: #93261a;
+  transition: background-color 0.1s;
+}
+
+body.theme-two {
+  background: #e6e6e6;
+}
+body.theme-two main.calc header {
+  color: #35352c;
+}
+body.theme-two main.calc header .display {
+  background: #ededed;
+}
+body.theme-two main.calc header .changer > div {
+  background-color: #d1cccc;
+}
+body.theme-two main.calc header .changer > div .pointer {
+  background-color: #ca5502;
+}
+body.theme-two main.calc .keypad {
+  background: #d1cccc;
+}
+body.theme-two main.calc .keypad .alphanumeric {
+  background-color: #e5e4e1;
+  box-shadow: 0px 4px 0px 0px #a69d91;
+  color: #35352c;
+}
+body.theme-two main.calc .keypad .alphanumeric:active {
+  background-color: #a69d91;
+  transition: background-color 0.1s;
+}
+body.theme-two main.calc .keypad .operation {
+  background-color: #377f86;
+  box-shadow: 0px 4px 0px 0px #1b5f65;
+  color: #ffffff;
+}
+body.theme-two main.calc .keypad .operation:active {
+  background-color: #1b5f65;
+  transition: background-color 0.1s;
+}
+body.theme-two main.calc .keypad .result {
+  background-color: #ca5502;
+  box-shadow: 0px 4px 0px 0px #893901;
+  color: #ffffff;
+}
+body.theme-two main.calc .keypad .result:active {
+  background-color: #893901;
+  transition: background-color 0.1s;
+}
+
+body.theme-three {
+  background: #160628;
+}
+body.theme-three main.calc header {
+  color: #ffe53d;
+}
+body.theme-three main.calc header .display {
+  background: #1d0934;
+}
+body.theme-three main.calc header .changer > div {
+  background-color: #232c43;
+}
+body.theme-three main.calc header .changer > div .pointer {
+  background-color: #00e0d1;
+}
+body.theme-three main.calc .keypad {
+  background: #1d0934;
+}
+body.theme-three main.calc .keypad .alphanumeric {
+  background-color: #341c4f;
+  box-shadow: 0px 4px 0px 0px #871c9c;
+  color: #ffe53d;
+}
+body.theme-three main.calc .keypad .alphanumeric:active {
+  background-color: #871c9c;
+  transition: background-color 0.1s;
+}
+body.theme-three main.calc .keypad .operation {
+  background-color: #58077d;
+  box-shadow: 0px 4px 0px 0px #bc15f4;
+  color: #ffffff;
+}
+body.theme-three main.calc .keypad .operation:active {
+  background-color: #bc15f4;
+  transition: background-color 0.1s;
+}
+body.theme-three main.calc .keypad .result {
+  background-color: #00e0d1;
+  box-shadow: 0px 4px 0px 0px #6cf9f2;
+  color: #1b2428;
+}
+body.theme-three main.calc .keypad .result:active {
+  background-color: #6cf9f2;
+  transition: background-color 0.1s;
+}
+
 main.calc header .theme-selector {
   display: flex;
   justify-content: space-between;
@@ -74,19 +212,17 @@ main.calc header .theme-selector .themes .changer span:nth-child(3) {
 }
 main.calc header .theme-selector .themes .changer > div {
   grid-area: slider;
-  background-color: #0003;
   border-radius: 1rem;
   position: relative;
   display: flex;
 }
 main.calc header .theme-selector .themes .changer > div .pointer {
-  width: 20%;
+  width: 18%;
   height: 60%;
   position: absolute;
   top: 50%;
-  transform: translate(35%, -50%);
+  transform: translate(40%, -50%);
   left: 0%;
-  background-color: red;
   border-radius: 6rem;
 }
 main.calc header .theme-selector .themes .changer > div .option {
@@ -115,9 +251,12 @@ main.calc .keypad {
 }
 main.calc .keypad button {
   font-size: 32px;
-  padding: 1.2rem;
+  padding: 1.2rem 3.2rem;
   border-radius: 0.6rem;
   border: 0;
+}
+main.calc .keypad .operation, main.calc .keypad .result {
+  font-size: 18px;
 }
 main.calc .keypad #reset-button {
   grid-column: 1/3;

@@ -10,9 +10,13 @@ main.calc .keypad {
 
   button {
     font-size: 32px;
-    padding: 1.2rem;
+    padding: 1.2rem 3.2rem;
     border-radius: .6rem;
     border: 0;
+  }
+
+  .operation, .result {
+    font-size: 18px;
   }
 
   #reset-button {

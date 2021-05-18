@@ -1,0 +1,176 @@
+body.theme-one {
+  background: $very-dark-desaturated-blue-main;
+
+  main.calc {
+    header {
+      color: $white;
+
+      .display {
+        background: $very-dark-desaturated-blue-screen;
+      }
+
+      .changer > div {
+        background-color: $very-dark-desaturated-blue-keypad;
+
+        .pointer {
+          background: $red-key;
+        }
+      }
+    }
+
+    .keypad {
+      background: $very-dark-desaturated-blue-keypad;
+
+      .alphanumeric {
+        background-color: $light-grayish-orange;
+        box-shadow: 0px 4px 0px 0px $grayish-orange;
+        color: $very-dark-grayish-blue;
+
+        &:active {
+          background-color: $grayish-orange;
+          transition: background-color .1s;
+        }
+      }
+
+      .operation {
+        background-color: $desaturated-dark-blue-background;
+        box-shadow: 0px 4px 0px 0px $desaturated-dark-blue-keyshadow;
+        color: $white;
+
+        &:active {
+          background-color: $desaturated-dark-blue-keyshadow;
+          transition: background-color .1s;
+        }
+      }
+
+      .result {
+        background-color: $red-key;
+        box-shadow: 0px 4px 0px 0px $red-keyshadow;
+        color: $white;
+
+        &:active {
+          background-color: $red-keyshadow;
+          transition: background-color .1s;
+        }
+      }
+    }
+  }
+}
+
+body.theme-two {
+  background: $light-gray;
+
+  main.calc {
+    header {
+      color: $very-dark-grayish-yellow;
+
+      .display {
+        background: $very-light-gray;
+      }
+
+      .changer > div {
+        background-color: $grayish-red;
+
+        .pointer {
+          background-color: $orange;
+        }
+      }
+    }
+
+    .keypad {
+      background: $grayish-red;
+
+      .alphanumeric {
+        background-color: $light-grayish-yellow;
+        box-shadow: 0px 4px 0px 0px $dark-grayish-orange;
+        color: $very-dark-grayish-yellow;
+
+        &:active {
+          background-color: $dark-grayish-orange;
+          transition: background-color .1s;
+        }
+      }
+
+      .operation {
+        background-color: $dark-moderate-cyan;
+        box-shadow: 0px 4px 0px 0px $very-dark-cyan;
+        color: $white;
+
+        &:active {
+          background-color: $very-dark-cyan;
+          transition: background-color .1s;
+        }
+      }
+
+      .result {
+        background-color: $orange;
+        box-shadow: 0px 4px 0px 0px $dark-orange;
+        color: $white;
+
+        &:active {
+          background-color: $dark-orange;
+          transition: background-color .1s;
+        }
+      }
+    }
+  }
+}
+
+body.theme-three {
+  background: $very-dark-violet-main;
+
+  main.calc {
+    header {
+      color: $light-yellow;
+
+      .display {
+        background: $very-dark-violet-keypad;
+      }
+
+      .changer > div {
+        background-color: $very-dark-desaturated-blue-keypad;
+
+        .pointer {
+          background-color: $pure-cyan;
+        }
+      }
+    }
+
+    .keypad {
+      background: $very-dark-violet-keypad;
+
+      .alphanumeric {
+        background-color: $very-dark-violet-key;
+        box-shadow: 0px 4px 0px 0px $dark-magenta;
+        color: $light-yellow;
+
+        &:active {
+          background-color: $dark-magenta;
+          transition: background-color .1s;
+        }
+      }
+
+      .operation {
+        background-color: $dark-violet;
+        box-shadow: 0px 4px 0px 0px $vivid-magenta;
+        color: $white;
+
+        &:active {
+          background-color: $vivid-magenta;
+          transition: background-color .1s;
+        }
+      }
+
+      .result {
+        background-color: $pure-cyan;
+        box-shadow: 0px 4px 0px 0px $soft-cyan;
+        color: $very-dark-blue;
+
+        &:active {
+          background-color: $soft-cyan;
+          transition: background-color .1s;
+        }
+      }
+    }
+  }
+}
