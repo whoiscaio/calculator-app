@@ -75,5 +75,15 @@ main.calc header .theme-selector .themes .changer > div .option {
   width: calc(100%/3);
   height: 100%;
 }
+main.calc header .display {
+  margin: 3rem 0;
+  padding: 4rem 3rem;
+  background-color: #0003;
+  border-radius: 1.4rem;
+  text-align: end;
+}
+main.calc header .display span {
+  font-size: 5rem;
+}
 
 /*# sourceMappingURL=main.css.map */
