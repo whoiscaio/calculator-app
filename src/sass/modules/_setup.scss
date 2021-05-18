@@ -1,0 +1,84 @@
+/* Theme 1 */
+
+// Backgrounds
+
+$very-dark-desaturated-blue-main: #3a4764;
+$very-dark-desaturated-blue-keypad: #232c43;
+$very-dark-desaturated-blue-screen: #182034;
+
+// Keys
+
+$desaturated-dark-blue-background: #637097;
+$desaturated-dark-blue-keyshadow: #404e72;
+
+$red-key: #d03f2f;
+$red-keyshadow: #93261a;
+
+$light-grayish-orange: #eae3dc; // Key background
+$grayish-orange: #b4a597; // Key shadow
+
+// Text
+
+$very-dark-grayish-blue: #444b5a;
+$white: #ffffff;
+
+/* Theme 2 */
+
+// Background
+
+$light-gray: #e6e6e6; // Main background
+$grayish-red: #d1cccc; // Toggle background, keypad backround
+$very-light-gray: #ededed; // Screen background
+
+// Keys
+
+$dark-moderate-cyan: #377f86; // Key background
+$very-dark-cyan: #1b5f65; // Key shadow
+
+$orange: #ca5502; // Key background
+$dark-orange: #893901; // Key shadow
+
+$light-grayish-yellow: #e5e4e1; // Key background
+$dark-grayish-orange: #a69d91; // Key shadow
+
+// Text
+
+$very-dark-grayish-yellow: #35352c;
+// $white
+
+/* Theme 3 */
+
+// Background
+
+$very-dark-violet-main: hsl(268, 75%, 9%);
+$very-dark-violet-keypad: hsl(268, 71%, 12%);
+
+// Keys
+
+$dark-violet: hsl(281, 89%, 26%); // Key background
+$vivid-magenta: hsl(285, 91%, 52%); // Key shadow
+
+$pure-cyan: hsl(176, 100%, 44%); // Key background
+$soft-cyan : hsl(177, 92%, 70%); // Key shadow
+
+$very-dark-violet-key:  hsl(268, 47%, 21%); // Key background
+$dark-magenta: hsl(290, 70%, 36%); // Key shadow
+
+// Text
+
+$light-yellow: hsl(52, 100%, 62%);
+$very-dark-blue: hsl(198, 20%, 13%);
+// $white
+
+/* Initial Properties */
+
+:root {
+  font-family: 'Spartan', Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

@@ -1,0 +1,16 @@
+/* Theme 1 */
+/* Theme 2 */
+/* Theme 3 */
+/* Initial Properties */
+:root {
+  font-family: "Spartan", Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=main.css.map */
