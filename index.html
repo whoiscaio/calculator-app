@@ -16,11 +16,54 @@
       href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/main.css" />
 
     <title>Frontend Mentor | Calculator</title>
   </head>
   <body>
-    <h1>Olá Mundo!</h1>
+    <main class="calc">
+      <header>
+        <div class="theme-selector">
+          <h1>calc</h1>
+          <div class="themes">
+            <span>THEME</span>
+            <div class="changer">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+              <div>
+                <div class="pointer"></div>
+                <div class="option-one"></div>
+                <div class="option-two"></div>
+                <div class="option-three"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="display">
+          <span>399,981</span>
+        </div>
+      </header>
+      <div class="keypad">
+        <button type="button" class="alphanumeric" value="7">7</button>
+        <button type="button" class="alphanumeric" value="8">8</button>
+        <button type="button" class="alphanumeric" value="9">9</button>
+        <button type="button" class="operation" value="DEL">DEL</button>
+        <button type="button" class="alphanumeric" value="4">4</button>
+        <button type="button" class="alphanumeric" value="5">5</button>
+        <button type="button" class="alphanumeric" value="6">6</button>
+        <button type="button" class="alphanumeric" value="+">+</button>
+        <button type="button" class="alphanumeric" value="1">1</button>
+        <button type="button" class="alphanumeric" value="2">2</button>
+        <button type="button" class="alphanumeric" value="3">3</button>
+        <button type="button" class="alphanumeric" value="-">-</button>
+        <button type="button" class="alphanumeric" value=".">.</button>
+        <button type="button" class="alphanumeric" value="0">0</button>
+        <button type="button" class="alphanumeric" value="/">/</button>
+        <button type="button" class="alphanumeric" value="*">x</button>
+        <button type="button" class="operation" value="RESET">RESET</button>
+        <button type="button" class="result" value="=">=</button>
+      </div>
+    </main>
   </body>
 </html>
