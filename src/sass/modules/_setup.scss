@@ -73,14 +73,26 @@ $very-dark-blue: hsl(198, 20%, 13%);
 /* Initial Properties */
 
 :root {
-  font-family: 'Spartan', Arial, Helvetica, sans-serif;
   font-size: 62.5%;
+
+  @media (min-width: 1800px) {
+    font-size: 67.5%;
+  }
+
+  @media (max-width: 1400px) {
+    font-size: 55%;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 50%;
+  }
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Spartan', Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -88,4 +100,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  main.calc {
+    margin: 0 2rem;
+  }
 }
