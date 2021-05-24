@@ -71,7 +71,8 @@ main.calc header{
   }
 
   .display {
-    min-height: 14rem;
+    min-height: 15rem;
+    font-size: 5rem;
 
     margin: 3rem 0;
     padding: 5rem 3rem 4rem;
@@ -81,8 +82,13 @@ main.calc header{
 
     text-align: end;
 
-    span {
+    #display-input {
+      width: 50rem;
       font-size: 5rem;
+      text-align: right;
+      
+      background: transparent;
+      border: 0;
     }
   }
 }

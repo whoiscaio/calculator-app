@@ -1,10 +1,13 @@
+import {toggleScroll as scroll} from './display-scroll.js'; 
+
 class Calculator {
   constructor() {
-    this.display = document.querySelector('.display span');
+    this.display = document.querySelector('.display input');
     this.buttons = document.querySelectorAll('.keypad button');
     this.calculated = false;
+    this.crucial = 'rofl123';
     this.regex = /[a-z]/i;
-
+    this.danger = false;
 
     this.buttons.forEach(el => {
       el.addEventListener('click', ({ target }) => {
@@ -19,11 +22,27 @@ class Calculator {
     });
   }
 
+  error() {
+    return (this.display.value = 'Bad expression');
+  }
+
   calculate() {
+    let test = this.display.value.split('');
+
+    test.forEach(char => {
+      if (this.regex.test(char)) {
+        this.danger = true;
+      }
+    });
+
     try {
-      this.display.innerHTML = eval(this.display.innerHTML);
+      if (!this.danger) {
+        this.display.value = eval(this.display.value);
+      } else {
+        throw 'error';
+      }
     } catch (error) {
-      this.display.innerHTML = "Bad expression";
+      this.error();
     }
 
     this.calculated = true;
@@ -32,15 +51,23 @@ class Calculator {
   write(value) {
     this.calculated && this.eraseAll();
 
-    this.display.innerHTML += value;
+    this.display.value += value;
+    scroll();
   }
 
   erase() {
-    this.display.innerHTML = this.display.innerHTML.substr(0, this.display.innerHTML.length - 1);
+    if (!this.calculated) {
+      this.display.value = this.display.value.substr(
+        0,
+        this.display.value.length - 1
+      );
+    }else{
+      this.eraseAll();
+    }
   }
 
   eraseAll() {
-    this.display.innerHTML = '';
+    this.display.value = '';
     this.calculated = false;
   }
 }

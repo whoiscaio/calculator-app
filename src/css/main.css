@@ -50,6 +50,9 @@ body.theme-one main.calc header {
 body.theme-one main.calc header .display {
   background: #182034;
 }
+body.theme-one main.calc header .display input {
+  color: #ffffff;
+}
 body.theme-one main.calc header .changer > div {
   background-color: #232c43;
 }
@@ -97,6 +100,9 @@ body.theme-two main.calc header {
 body.theme-two main.calc header .display {
   background: #ededed;
 }
+body.theme-two main.calc header .display input {
+  color: #35352c;
+}
 body.theme-two main.calc header .changer > div {
   background-color: #d1cccc;
 }
@@ -143,6 +149,9 @@ body.theme-three main.calc header {
 }
 body.theme-three main.calc header .display {
   background: #1d0934;
+}
+body.theme-three main.calc header .display input {
+  color: #ffe53d;
 }
 body.theme-three main.calc header .changer > div {
   background-color: #232c43;
@@ -236,15 +245,20 @@ main.calc header .theme-selector .themes .changer > div .option {
   height: 100%;
 }
 main.calc header .display {
-  min-height: 14rem;
+  min-height: 15rem;
+  font-size: 5rem;
   margin: 3rem 0;
   padding: 5rem 3rem 4rem;
   background-color: #0003;
   border-radius: 1.4rem;
   text-align: end;
 }
-main.calc header .display span {
+main.calc header .display #display-input {
+  width: 50rem;
   font-size: 5rem;
+  text-align: right;
+  background: transparent;
+  border: 0;
 }
 
 main.calc .keypad {

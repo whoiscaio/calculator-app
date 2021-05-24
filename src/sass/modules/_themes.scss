@@ -7,6 +7,10 @@ body.theme-one {
 
       .display {
         background: $very-dark-desaturated-blue-screen;
+
+        input {
+          color: $white;
+        }
       }
 
       .changer > div {
@@ -67,6 +71,10 @@ body.theme-two {
 
       .display {
         background: $very-light-gray;
+
+        input {
+          color: $very-dark-grayish-yellow;
+        }
       }
 
       .changer > div {
@@ -127,6 +135,10 @@ body.theme-three {
 
       .display {
         background: $very-dark-violet-keypad;
+
+        input {
+          color: $light-yellow;
+        }
       }
 
       .changer > div {
