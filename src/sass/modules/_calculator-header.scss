@@ -71,8 +71,10 @@ main.calc header{
   }
 
   .display {
+    min-height: 14rem;
+
     margin: 3rem 0;
-    padding: 4rem 3rem;
+    padding: 5rem 3rem 4rem;
 
     background-color: #0003;
     border-radius: 1.4rem;

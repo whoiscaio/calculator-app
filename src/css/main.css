@@ -236,8 +236,9 @@ main.calc header .theme-selector .themes .changer > div .option {
   height: 100%;
 }
 main.calc header .display {
+  min-height: 14rem;
   margin: 3rem 0;
-  padding: 4rem 3rem;
+  padding: 5rem 3rem 4rem;
   background-color: #0003;
   border-radius: 1.4rem;
   text-align: end;
@@ -264,10 +265,10 @@ main.calc .keypad button {
 main.calc .keypad .operation, main.calc .keypad .result {
   font-size: 18px;
 }
-main.calc .keypad #reset-button {
+main.calc .keypad .reset-button {
   grid-column: 1/3;
 }
-main.calc .keypad #equal-button {
+main.calc .keypad .equal-button {
   grid-column: 3/5;
 }
 

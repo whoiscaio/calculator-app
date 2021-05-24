@@ -19,11 +19,11 @@ main.calc .keypad {
     font-size: 18px;
   }
 
-  #reset-button {
+  .reset-button {
     grid-column: 1 / 3;
   }
 
-  #equal-button {
+  .equal-button {
     grid-column: 3 / 5;
   }
 }
