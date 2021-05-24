@@ -35,10 +35,11 @@
 
 body {
   height: 100vh;
+  padding-top: 8rem;
 }
 body main.calc {
   width: min(50rem, 95%);
-  margin: 8rem auto;
+  margin: 0 auto;
 }
 body .bold {
   transform: scale(1.3);

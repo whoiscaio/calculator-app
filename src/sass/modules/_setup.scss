@@ -101,10 +101,11 @@ $very-dark-blue: #1b2428;
 
 body {
   height: 100vh;
+  padding-top: 8rem;
 
   main.calc {
     width: min(50rem, 95%);
-    margin: 8rem auto;
+    margin: 0 auto;
   }
 
   .bold {
