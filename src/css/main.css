@@ -37,6 +37,9 @@ body {
 body main.calc {
   margin: 0 2rem;
 }
+body .bold {
+  transform: scale(1.3);
+}
 
 body.theme-one {
   background: #3a4764;
