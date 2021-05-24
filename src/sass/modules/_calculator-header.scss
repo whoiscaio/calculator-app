@@ -56,7 +56,7 @@ main.calc header{
             position: absolute;
             top: 50%;
             transform: translate(40%, -50%);
-            left: 0%;
+            transition: left .4s;
             
             border-radius: 6rem;
           }

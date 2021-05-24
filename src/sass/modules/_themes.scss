@@ -14,6 +14,7 @@ body.theme-one {
 
         .pointer {
           background: $red-key;
+          left: 0%;
         }
       }
     }
@@ -73,6 +74,7 @@ body.theme-two {
 
         .pointer {
           background-color: $orange;
+          left: 33.3%;
         }
       }
     }
@@ -132,6 +134,7 @@ body.theme-three {
 
         .pointer {
           background-color: $pure-cyan;
+          left: 66.6%;
         }
       }
     }
