@@ -101,11 +101,14 @@ $very-dark-blue: #1b2428;
 
 body {
   height: 100vh;
-  padding-top: 8rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   main.calc {
     width: min(50rem, 95%);
-    margin: 0 auto;
+    margin: 0 1rem;
   }
 
   .bold {

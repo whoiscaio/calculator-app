@@ -1,12 +1,12 @@
-import {toggleScroll as scroll} from './display-scroll.js'; 
+import { toggleScroll as scroll } from './display-scroll.js';
 
 class Calculator {
   constructor() {
     this.display = document.querySelector('.display input');
     this.buttons = document.querySelectorAll('.keypad button');
     this.calculated = false;
-    this.crucial = 'rofl123';
     this.regex = /[a-z]/i;
+    this.secondRegex = /[÷x+-]/i;
     this.danger = false;
 
     this.buttons.forEach(el => {
@@ -27,7 +27,12 @@ class Calculator {
   }
 
   calculate() {
-    let test = this.display.value.split('');
+    this.danger = false;
+
+    let filter = this.display.value;
+    filter = filter.replace('x', '*');
+    filter = filter.replace('÷', '/');
+    let test = filter.split('');
 
     test.forEach(char => {
       if (this.regex.test(char)) {
@@ -37,7 +42,7 @@ class Calculator {
 
     try {
       if (!this.danger) {
-        this.display.value = eval(this.display.value);
+        this.display.value = eval(filter);
       } else {
         throw 'error';
       }
@@ -51,7 +56,13 @@ class Calculator {
   write(value) {
     this.calculated && this.eraseAll();
 
-    this.display.value += value;
+    if(this.display.value === '' || this.secondRegex.test(this.display.value[this.display.value.length - 1])) {
+      if(!this.secondRegex.test(value)) {
+        this.display.value += value;
+      }
+    }else {
+      this.display.value += value;
+    }
     scroll();
   }
 
@@ -61,7 +72,7 @@ class Calculator {
         0,
         this.display.value.length - 1
       );
-    }else{
+    } else {
       this.eraseAll();
     }
   }
