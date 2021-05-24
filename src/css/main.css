@@ -287,19 +287,8 @@ main.calc .keypad button {
   border-radius: 0.6rem;
   border: 0;
 }
-@media (max-width: 400px) {
-  main.calc .keypad button {
-    font-size: 2.8rem;
-    padding: 0.8rem 2.8rem;
-  }
-}
-@media (max-width: 370px) {
-  main.calc .keypad button {
-    font-size: 2.4rem;
-    padding: 0.5rem 2.4rem;
-  }
-}
-main.calc .keypad .operation, main.calc .keypad .result {
+main.calc .keypad .operation,
+main.calc .keypad .result {
   font-size: 18px;
 }
 main.calc .keypad .reset-button {
@@ -307,6 +296,33 @@ main.calc .keypad .reset-button {
 }
 main.calc .keypad .equal-button {
   grid-column: 3/5;
+}
+@media (max-width: 400px) {
+  main.calc .keypad {
+    gap: 2.2rem;
+  }
+  main.calc .keypad button {
+    font-size: 2.8rem;
+    padding: 0.8rem 2.8rem;
+  }
+}
+@media (max-width: 370px) {
+  main.calc .keypad {
+    gap: 2rem;
+  }
+  main.calc .keypad button {
+    font-size: 2.4rem;
+    padding: 0.5rem 2.2rem;
+  }
+}
+@media (max-width: 330px) {
+  main.calc .keypad {
+    gap: 1.6rem;
+  }
+  main.calc .keypad button {
+    font-size: 2.2rem;
+    padding: 0.4rem 1.6rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
