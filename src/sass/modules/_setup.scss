@@ -86,6 +86,10 @@ $very-dark-blue: #1b2428;
   @media (max-width: 800px) {
     font-size: 50%;
   }
+
+  @media (max-width: 700px) {
+    font-size: 47.5%;
+  }
 }
 
 * {
@@ -97,12 +101,10 @@ $very-dark-blue: #1b2428;
 
 body {
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   main.calc {
-    margin: 0 2rem;
+    width: min(50rem, 95%);
+    margin: 8rem auto;
   }
 
   .bold {

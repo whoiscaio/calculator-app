@@ -9,10 +9,15 @@ main.calc .keypad {
   background-color: #0003;
 
   button {
-    font-size: 32px;
+    font-size: 3.2rem;
     padding: 1.2rem 3.2rem;
     border-radius: .6rem;
     border: 0;
+
+    @media (max-width: 400px) {
+      font-size: 2.8rem;
+      padding: .8rem 2.8rem;
+    }
   }
 
   .operation, .result {

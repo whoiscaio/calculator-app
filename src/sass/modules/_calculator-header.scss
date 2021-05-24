@@ -12,6 +12,10 @@ main.calc header{
       display: flex;
       align-items: flex-end;
 
+      span {
+        font-size: 1.4rem;
+      }
+
       > span {
         transform: translateY(-18%);
         margin-right: 1.6rem;
@@ -71,6 +75,7 @@ main.calc header{
   }
 
   .display {
+    width: 100%;
     min-height: 15rem;
     font-size: 5rem;
 
@@ -83,7 +88,7 @@ main.calc header{
     text-align: end;
 
     #display-input {
-      width: 50rem;
+      width: 100%;
       font-size: 5rem;
       text-align: right;
       
