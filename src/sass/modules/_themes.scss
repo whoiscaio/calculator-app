@@ -201,3 +201,22 @@ body.theme-two {
 body.theme-three {
   @include theme-three;
 }
+
+@media (prefers-color-scheme: no-preference) {
+  body {
+    @include theme-three;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    @include theme-one;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  
+  body {
+    @include theme-two;
+  }
+}

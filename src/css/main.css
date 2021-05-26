@@ -198,6 +198,159 @@ body.theme-three main.calc .keypad .result:active {
   transition: background-color 0.1s;
 }
 
+@media (prefers-color-scheme: no-preference) {
+  body {
+    background: #160628;
+  }
+  body main.calc header {
+    color: #ffe53d;
+  }
+  body main.calc header .display {
+    background: #1d0934;
+  }
+  body main.calc header .display input {
+    color: #ffe53d;
+  }
+  body main.calc header .changer > div {
+    background-color: #232c43;
+  }
+  body main.calc header .changer > div .pointer {
+    background-color: #00e0d1;
+    left: 66.6%;
+  }
+  body main.calc .keypad {
+    background: #1d0934;
+  }
+  body main.calc .keypad .alphanumeric {
+    background-color: #341c4f;
+    box-shadow: 0px 4px 0px 0px #871c9c;
+    color: #ffe53d;
+  }
+  body main.calc .keypad .alphanumeric:active {
+    background-color: #871c9c;
+    transition: background-color 0.1s;
+  }
+  body main.calc .keypad .operation {
+    background-color: #58077d;
+    box-shadow: 0px 4px 0px 0px #bc15f4;
+    color: #ffffff;
+  }
+  body main.calc .keypad .operation:active {
+    background-color: #bc15f4;
+    transition: background-color 0.1s;
+  }
+  body main.calc .keypad .result {
+    background-color: #00e0d1;
+    box-shadow: 0px 4px 0px 0px #6cf9f2;
+    color: #1b2428;
+  }
+  body main.calc .keypad .result:active {
+    background-color: #6cf9f2;
+    transition: background-color 0.1s;
+  }
+}
+@media (prefers-color-scheme: light) {
+  body {
+    background: #3a4764;
+  }
+  body main.calc header {
+    color: #ffffff;
+  }
+  body main.calc header .display {
+    background: #182034;
+  }
+  body main.calc header .display input {
+    color: #ffffff;
+  }
+  body main.calc header .changer > div {
+    background-color: #232c43;
+  }
+  body main.calc header .changer > div .pointer {
+    background: #d03f2f;
+    left: 0%;
+  }
+  body main.calc .keypad {
+    background: #232c43;
+  }
+  body main.calc .keypad .alphanumeric {
+    background-color: #eae3dc;
+    box-shadow: 0px 4px 0px 0px #b4a597;
+    color: #444b5a;
+  }
+  body main.calc .keypad .alphanumeric:active {
+    background-color: #b4a597;
+    transition: background-color 0.1s;
+  }
+  body main.calc .keypad .operation {
+    background-color: #637097;
+    box-shadow: 0px 4px 0px 0px #404e72;
+    color: #ffffff;
+  }
+  body main.calc .keypad .operation:active {
+    background-color: #404e72;
+    transition: background-color 0.1s;
+  }
+  body main.calc .keypad .result {
+    background-color: #d03f2f;
+    box-shadow: 0px 4px 0px 0px #93261a;
+    color: #ffffff;
+  }
+  body main.calc .keypad .result:active {
+    background-color: #93261a;
+    transition: background-color 0.1s;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #e6e6e6;
+  }
+  body main.calc header {
+    color: #35352c;
+  }
+  body main.calc header .display {
+    background: #ededed;
+  }
+  body main.calc header .display input {
+    color: #35352c;
+  }
+  body main.calc header .changer > div {
+    background-color: #d1cccc;
+  }
+  body main.calc header .changer > div .pointer {
+    background-color: #ca5502;
+    left: 33.3%;
+  }
+  body main.calc .keypad {
+    background: #d1cccc;
+  }
+  body main.calc .keypad .alphanumeric {
+    background-color: #e5e4e1;
+    box-shadow: 0px 4px 0px 0px #a69d91;
+    color: #35352c;
+  }
+  body main.calc .keypad .alphanumeric:active {
+    background-color: #a69d91;
+    transition: background-color 0.1s;
+  }
+  body main.calc .keypad .operation {
+    background-color: #377f86;
+    box-shadow: 0px 4px 0px 0px #1b5f65;
+    color: #ffffff;
+  }
+  body main.calc .keypad .operation:active {
+    background-color: #1b5f65;
+    transition: background-color 0.1s;
+  }
+  body main.calc .keypad .result {
+    background-color: #ca5502;
+    box-shadow: 0px 4px 0px 0px #893901;
+    color: #ffffff;
+  }
+  body main.calc .keypad .result:active {
+    background-color: #893901;
+    transition: background-color 0.1s;
+  }
+}
 main.calc header .theme-selector {
   display: flex;
   justify-content: space-between;

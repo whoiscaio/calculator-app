@@ -27,9 +27,7 @@ class Calculator {
 
   getPreference() {
     const theme = localStorage.getItem('theme');
-    theme 
-    ? setTheme(theme)
-    : setTheme('theme-one');
+    theme && setTheme(theme);
   }
 
   error() {
