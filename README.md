@@ -33,7 +33,9 @@ Users should be able to:
 
 ### Get Started
 
-In order to get started, you need to make sure you have [SASS](https://sass-lang.com/) on your machine, if you dont you can run on your bash:
+In order to get started you need to make sure you have [SASS](https://sass-lang.com/) on your machine, if you dont you can run on your bash:
+
+**Obs:** Your can skip this step if you don't want to deal with the SASS files.
 
 ```bash
 $ npm install sass -g
@@ -43,6 +45,12 @@ Or, if you prefer to use yarn:
 
 ```bash
 $ yarn add sass
+```
+
+**Obs:** Yarn discourages the use of global packages, but if you truly want or need, you can run:
+
+```bash
+$ yarn add global sass
 ```
 
 Then, proceed to clone the repository using:
