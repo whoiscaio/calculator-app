@@ -200,57 +200,6 @@ body.theme-three main.calc .keypad .result:active {
 
 @media (prefers-color-scheme: no-preference) {
   body {
-    background: #160628;
-  }
-  body main.calc header {
-    color: #ffe53d;
-  }
-  body main.calc header .display {
-    background: #1d0934;
-  }
-  body main.calc header .display input {
-    color: #ffe53d;
-  }
-  body main.calc header .changer > div {
-    background-color: #232c43;
-  }
-  body main.calc header .changer > div .pointer {
-    background-color: #00e0d1;
-    left: 66.6%;
-  }
-  body main.calc .keypad {
-    background: #1d0934;
-  }
-  body main.calc .keypad .alphanumeric {
-    background-color: #341c4f;
-    box-shadow: 0px 4px 0px 0px #871c9c;
-    color: #ffe53d;
-  }
-  body main.calc .keypad .alphanumeric:active {
-    background-color: #871c9c;
-    transition: background-color 0.1s;
-  }
-  body main.calc .keypad .operation {
-    background-color: #58077d;
-    box-shadow: 0px 4px 0px 0px #bc15f4;
-    color: #ffffff;
-  }
-  body main.calc .keypad .operation:active {
-    background-color: #bc15f4;
-    transition: background-color 0.1s;
-  }
-  body main.calc .keypad .result {
-    background-color: #00e0d1;
-    box-shadow: 0px 4px 0px 0px #6cf9f2;
-    color: #1b2428;
-  }
-  body main.calc .keypad .result:active {
-    background-color: #6cf9f2;
-    transition: background-color 0.1s;
-  }
-}
-@media (prefers-color-scheme: light) {
-  body {
     background: #3a4764;
   }
   body main.calc header {
@@ -300,7 +249,7 @@ body.theme-three main.calc .keypad .result:active {
     transition: background-color 0.1s;
   }
 }
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   body {
     background: #e6e6e6;
   }
@@ -348,6 +297,57 @@ body.theme-three main.calc .keypad .result:active {
   }
   body main.calc .keypad .result:active {
     background-color: #893901;
+    transition: background-color 0.1s;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #160628;
+  }
+  body main.calc header {
+    color: #ffe53d;
+  }
+  body main.calc header .display {
+    background: #1d0934;
+  }
+  body main.calc header .display input {
+    color: #ffe53d;
+  }
+  body main.calc header .changer > div {
+    background-color: #232c43;
+  }
+  body main.calc header .changer > div .pointer {
+    background-color: #00e0d1;
+    left: 66.6%;
+  }
+  body main.calc .keypad {
+    background: #1d0934;
+  }
+  body main.calc .keypad .alphanumeric {
+    background-color: #341c4f;
+    box-shadow: 0px 4px 0px 0px #871c9c;
+    color: #ffe53d;
+  }
+  body main.calc .keypad .alphanumeric:active {
+    background-color: #871c9c;
+    transition: background-color 0.1s;
+  }
+  body main.calc .keypad .operation {
+    background-color: #58077d;
+    box-shadow: 0px 4px 0px 0px #bc15f4;
+    color: #ffffff;
+  }
+  body main.calc .keypad .operation:active {
+    background-color: #bc15f4;
+    transition: background-color 0.1s;
+  }
+  body main.calc .keypad .result {
+    background-color: #00e0d1;
+    box-shadow: 0px 4px 0px 0px #6cf9f2;
+    color: #1b2428;
+  }
+  body main.calc .keypad .result:active {
+    background-color: #6cf9f2;
     transition: background-color 0.1s;
   }
 }

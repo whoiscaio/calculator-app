@@ -204,19 +204,19 @@ body.theme-three {
 
 @media (prefers-color-scheme: no-preference) {
   body {
-    @include theme-three;
+    @include theme-one;
   }
 }
 
 @media (prefers-color-scheme: light) {
   body {
-    @include theme-one;
+    @include theme-two;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   
   body {
-    @include theme-two;
+    @include theme-three;
   }
 }
