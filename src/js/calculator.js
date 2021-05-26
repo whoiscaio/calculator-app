@@ -1,7 +1,10 @@
 import { toggleScroll as scroll } from './display-scroll.js';
+import { setTheme } from './theme-switcher.js';
 
 class Calculator {
   constructor() {
+    this.getPreference();
+
     this.display = document.querySelector('.display input');
     this.buttons = document.querySelectorAll('.keypad button');
     this.calculated = false;
@@ -20,6 +23,13 @@ class Calculator {
         target.classList.contains('delete-button') && this.erase();
       });
     });
+  }
+
+  getPreference() {
+    const theme = localStorage.getItem('theme');
+    theme 
+    ? setTheme(theme)
+    : setTheme('theme-one');
   }
 
   error() {

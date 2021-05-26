@@ -8,6 +8,16 @@ function reset() {
   body.classList.remove('theme-three');
 }
 
+function setPreference(item) {
+  localStorage.setItem('theme', item);
+}
+
+export function setTheme(theme) {
+  reset();
+  body.classList.add(theme);
+  setPreference(theme);
+}
+
 function mouseOverSpanBehavior(target) {
   if (target.classList.contains('option-one')) {
     texts[0].classList.add('bold');
@@ -46,19 +56,17 @@ function mouseOutSpanBehavior(target) {
 
 function toggleTheme(target) {
   if (target.classList.contains('option-one')) {
-    reset();
-    body.classList.add('theme-one');
+    setTheme('theme-one');
   } else if (target.classList.contains('option-two')) {
-    reset();
-    body.classList.add('theme-two');
+    setTheme('theme-two');
   } else if (target.classList.contains('option-three')) {
-    reset();
-    body.classList.add('theme-three');
+    setTheme('theme-three');
   }
 }
 
 options.forEach(item => {
   item.addEventListener('mouseover', ({ target }) => mouseOverSpanBehavior(target));
   item.addEventListener('mouseout', ({ target }) => mouseOutSpanBehavior(target));
+
   item.addEventListener('click', ({target}) => toggleTheme(target));
 });

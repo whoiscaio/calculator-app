@@ -1,4 +1,4 @@
-body.theme-one {
+@mixin theme-one {
   background: $very-dark-desaturated-blue-main;
 
   main.calc {
@@ -33,7 +33,7 @@ body.theme-one {
 
         &:active {
           background-color: $grayish-orange;
-          transition: background-color .1s;
+          transition: background-color 0.1s;
         }
       }
 
@@ -44,7 +44,7 @@ body.theme-one {
 
         &:active {
           background-color: $desaturated-dark-blue-keyshadow;
-          transition: background-color .1s;
+          transition: background-color 0.1s;
         }
       }
 
@@ -55,14 +55,14 @@ body.theme-one {
 
         &:active {
           background-color: $red-keyshadow;
-          transition: background-color .1s;
+          transition: background-color 0.1s;
         }
       }
     }
   }
 }
 
-body.theme-two {
+@mixin theme-two {
   background: $light-gray;
 
   main.calc {
@@ -97,7 +97,7 @@ body.theme-two {
 
         &:active {
           background-color: $dark-grayish-orange;
-          transition: background-color .1s;
+          transition: background-color 0.1s;
         }
       }
 
@@ -108,7 +108,7 @@ body.theme-two {
 
         &:active {
           background-color: $very-dark-cyan;
-          transition: background-color .1s;
+          transition: background-color 0.1s;
         }
       }
 
@@ -119,14 +119,14 @@ body.theme-two {
 
         &:active {
           background-color: $dark-orange;
-          transition: background-color .1s;
+          transition: background-color 0.1s;
         }
       }
     }
   }
 }
 
-body.theme-three {
+@mixin theme-three {
   background: $very-dark-violet-main;
 
   main.calc {
@@ -161,7 +161,7 @@ body.theme-three {
 
         &:active {
           background-color: $dark-magenta;
-          transition: background-color .1s;
+          transition: background-color 0.1s;
         }
       }
 
@@ -172,7 +172,7 @@ body.theme-three {
 
         &:active {
           background-color: $vivid-magenta;
-          transition: background-color .1s;
+          transition: background-color 0.1s;
         }
       }
 
@@ -183,9 +183,21 @@ body.theme-three {
 
         &:active {
           background-color: $soft-cyan;
-          transition: background-color .1s;
+          transition: background-color 0.1s;
         }
       }
     }
   }
+}
+
+body.theme-one {
+  @include theme-one;
+}
+
+body.theme-two {
+  @include theme-two;
+}
+
+body.theme-three {
+  @include theme-three;
 }
