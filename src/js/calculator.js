@@ -10,6 +10,7 @@ class Calculator {
     this.calculated = false;
     this.regex = /[a-z]/i;
     this.secondRegex = /[÷x+-]/i;
+    this.octalVerificationRegex = /[*+-/]/i
     this.danger = false;
 
     this.buttons.forEach(el => {
@@ -53,8 +54,6 @@ class Calculator {
         let octalVerification = true;
         let counter = 0;
 
-        // 10 + 001
-
         while(octalVerification) {
           octalVerification = false;
 
@@ -65,19 +64,21 @@ class Calculator {
             for(let i = 0; i < filter.length; i++) {
               if(filter[i] === '0') {
                 counter++;
-              }
+              } else {
+                if(this.octalVerificationRegex.test(filter[i])) {
+                  if(filter[i + 1] === '0') {
+                    filter = filter.replace('0', '', counter);
 
-              if(this.secondRegex.test(filter[i])) {
-                if(filter[i + 1] === '0') {
-                  filter = filter.replace('0', '', counter);
-                  octalVerification = true;
-                  counter = 0;
+                    octalVerification = true;
+                    counter = 0;
+                  }
                 }
               }
             }
           }
         }
 
+        console.log(filter);
         this.display.value = eval(filter);
       } else {
         throw 'error';
